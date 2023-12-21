@@ -1,0 +1,16 @@
+.lisa {
+    background-color: #2f64d6;
+    color: white;
+    padding: 20px;
+}
+
+.bart {
+    background-color: #ff81c1;
+    color: white;
+    padding: 20px;
+}
+
+img {
+    width: 300px;
+    display: block;
+}

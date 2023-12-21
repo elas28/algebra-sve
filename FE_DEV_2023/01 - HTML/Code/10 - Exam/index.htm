@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simpsoni</title>
+    <link rel="icon" type="image/x-icon" href="multimedia/images/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <img src="multimedia/images/logo/logo.svg" width="200" />
+      <nav>
+        <ol>
+          <li><a href="#obitelj">Obitelj</a></li>
+          <li><a href="#clanovi">Članovi obitelji</a></li>
+          <li><a href="#kontakt">Kontaktirajte Fox</a></li>
+        </ol>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h1>Obitelj Simpson</h1>
+      <section>
+        <h2 id="obitelj">Obitelj</h2>
+        <p>
+          Simpsoni (eng. The Simpsons) su animirana TV serija, dobitnik Emmyja
+          koju je stvorio Matt Groening, također i autor animirane TV serije
+          Futurama, za TV kuću Fox Network.
+        </p>
+        <p>
+          Serija je postala jedna od prvih velikih hitova te TV kuće, a uz to je
+          i jedna od najuspješnijih televizijskih serija u povijesti tog medija.
+          Televizijska je serija zapravo spin-off (omašak) niza kratkih
+          animiranih filmova koje su se emitirale tijekom showa Tracey Ullman.
+        </p>
+        <img src="multimedia/images/simpsons.jpg" alt="Obitelj" width="760" />
+        <br />
+        <audio controls>
+          <source src="multimedia/audio/simpsons.mp3" type="audio/ogg" />
+          Vaš preglednik ne podržava audio oznaku.
+        </audio>
+        <p>Poslušajte najavnicu serije Simpsoni</p>
+        <hr />
+        <h3>Operator! Give me the number for 911!</h3>
+        <small>- Homer Simpson</small>
+        <hr />
+      </section>
+      <section>
+        <h2 id="clanovi">Članovi obitelji</h2>
+        <ul>
+          <li>Lisa</li>
+          <li>Bart</li>
+          <li>Maggie</li>
+          <li>Homer</li>
+          <li>Marge</li>
+          <li>Santas Little Helper</li>
+          <li><del>Ned Flanders</del></li>
+        </ul>
+
+        <img
+          src="multimedia/images/family.png"
+          alt="Obitelj Simpson"
+          width="300"
+        />
+      </section>
+      <section>
+        <h2 id="kontakt">Kontakt</h2>
+        <p>
+          Ako želite kontaktirati korporaciju Fox, nazovite +1-212-852-7059 ili
+          koristite donji kontakt obrazac.
+        </p>
+        <form name="kontakt-obrazac" action="" method="post">
+          <p>
+            <label for="ime-prezime">Ime i prezime</label><br />
+            <input id="ime-prezime" type="text" name="ime" required />
+          </p>
+          <p>
+            <label for="e-mail">E-mail</label><br />
+            <input id="e-mail" type="email" name="e-mail" required />
+          </p>
+          <p>
+            <label for="poruka">Poruka</label><br />
+            <textarea id="poruka" name="poruka" cols="45" rows="5"></textarea>
+          </p>
+          <p>
+            <input type="submit" name="submit_btn" value="Pošalji poruku" />
+          </p>
+        </form>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <p><em>&copy; Fox&reg; Corporation 2023</em></p>
+      <img src="multimedia/images/logo/fox.svg" alt="Fox" width="50" />
+    </footer>
+  </body>
+</html>

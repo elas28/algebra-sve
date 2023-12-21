@@ -1,0 +1,35 @@
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        color: white;
+        transition: background-color 0.5s;
+    }
+
+    .temperature {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 15px;
+        background: white;
+        border: none;
+        font-size: 17px;
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    button:active {
+        opacity: 0.9;
+    }

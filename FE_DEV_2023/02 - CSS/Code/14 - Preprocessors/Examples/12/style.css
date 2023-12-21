@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+  content: "di si?";
+}
+
+div {
+  margin: 0 0 1em 0;
+  padding: 1em;
+  background: #333;
+  color: #eee;
+}
+
+.icon-40px::after {
+  content: "40px";
+}
+
+.icon-50px::after {
+  content: "50px";
+}
+
+.icon-80px::after {
+  content: "80px";
+}/*# sourceMappingURL=style.css.map */

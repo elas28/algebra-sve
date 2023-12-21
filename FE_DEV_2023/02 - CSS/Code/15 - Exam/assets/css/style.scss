@@ -1,0 +1,72 @@
+@import 'abstracts/mixins';
+@import 'base/reset';
+
+body {
+  background: url('../media/couch.jpeg') no-repeat center center/cover fixed;
+}
+
+.flex-container {
+  @include flex-container;
+
+  img {
+    flex-basis: 24%;
+    position: relative;
+
+    &:first-child {
+      animation: slide-left 1.5s ease-in-out forwards;
+      max-width: 150px;
+      left: -90vh;
+      padding-left: 200px;
+      padding-top: 50px;
+    }
+
+    &:nth-of-type(2) {
+      animation: slide-down 1.5s ease-in-out 1.5s forwards;
+      max-width: 400px;
+      top: -90vh;
+      padding-right: 130px;
+      padding-top: 77px;
+    }
+
+    &:last-child {
+      animation: slide-right 1.5s ease-in-out 3s forwards;
+      padding-top: 25px;
+      max-width: 100px;
+      right: -90vh;
+      padding-top: 100px;
+      padding-right: 200px;
+    }
+  }
+}
+
+// Animations
+
+@keyframes slide-right {
+  0% {
+    right: -90vh;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    left: -90vh;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    top: -90vh;
+  }
+
+  100% {
+    top: 0;
+  }
+}

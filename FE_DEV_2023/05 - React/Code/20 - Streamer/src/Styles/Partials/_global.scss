@@ -1,0 +1,106 @@
+// Globals
+body,
+#root {
+    background-color: $background !important;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 40px;
+}
+
+.error {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    z-index: 2;
+    align-items: center;
+    color: $white;
+
+    h1 {
+        font-size: 20px !important;
+        font-weight: 200 !important;
+    }
+
+    p {
+        font-size: 12px !important;
+        font-weight: 100 !important;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+    .spinner-border {
+        margin: 2rem;
+        color: $white;
+    }
+}
+
+// Footer
+.footer {
+    color: $white !important;
+    font-weight: 100;
+    font-size: 13px;
+    padding: 2rem;
+    border-top: 1px solid #ffffff12;
+    padding-top: 2rem;
+    position: relative;
+
+    .disclaimer {
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-size: 10px;
+        opacity: 0.5;
+    }
+
+    .social-media {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        margin-bottom: 1rem;
+        z-index: 2;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    a {
+        color: $white !important;
+    }
+
+    .logo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 179px;
+        opacity: 0.04;
+    }
+}
+
+.button {
+    color: $primary;
+    max-width: fit-content;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 200px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.55em 1.5em 0.5em;
+    text-decoration: none;
+    border: 1px solid $primary;
+    display: inline-block;
+    margin-bottom: 1rem;
+}

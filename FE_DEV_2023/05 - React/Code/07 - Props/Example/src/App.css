@@ -1,0 +1,23 @@
+.student-data {
+    background-color: aliceblue;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.university-data {
+    background-color: lavender;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+#avatar {
+    max-width: 200px;
+}
+
+.comment {
+    background-color: lavender;
+    padding: 10px;
+    border: 1px solid gray;
+}

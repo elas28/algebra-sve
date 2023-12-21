@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Facts API</title>
+</head>
+
+<body>
+    <h3>Random Cat Facts</h3>
+    <hr>
+    <p id='catFact'></p>
+    <button onclick="getFact()">Get a new fact</button>
+    <script>
+        function getFact() {
+            fetch(`https://catfact.ninja/fact`)
+                .then(response => response.json())
+                .then(data => document.getElementById('catFact').innerHTML = `${data.fact}`)
+                .catch(error => alert(error))
+        }
+        getFact();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+@import './variables';
+@import './mixins';
+
+* {
+  font-family: $font-family;
+}
+
+body {
+  background-color: white;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  overflow: scroll;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+  }
+}
+
+.general-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.quiz-selection {
+    margin-top: 1rem;
+    flex-direction: row;
+
+    img {
+      filter: brightness(0%);
+    }
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    button {
+      min-height: 80px;
+      max-width: 230px;
+      @include buttonStyles(transparent, $gray);
+    }
+  }
+
+  button {
+    @include buttonStyles(transparent, $gray);
+  }
+}
+
+.question-section {
+  text-align: center;
+  font-size: 1.7rem;
+
+  .question-count {
+    display: block;
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.score-section {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    @include buttonStyles(transparent, $gray);
+  }
+
+  img {
+    margin-bottom: 10px;
+    max-width: 100px;
+  }
+
+  p {
+    max-width: 500px;
+    text-align: center;
+    color: #808080;
+    margin: 5px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+
+.info {
+  text-align: center;
+  width: 100vw;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  p {
+    color: #808080;
+    margin: 5px;
+    font-weight: 300;
+  }
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.feedback-section {
+  text-align: center;
+
+  h1 {
+    font-family: 'Noto Emoji', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h2 {
+    color: #808080;
+    font-weight: 200;
+    font-size: 13px;
+  }
+}

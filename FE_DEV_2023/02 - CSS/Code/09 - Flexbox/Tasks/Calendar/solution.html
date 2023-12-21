@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap'
+        rel='stylesheet'>
+    <title>Nino's Personal Calendar</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            font-family: 'IBM Plex Mono', monospace;
+            background: #ffffff;
+        }
+
+        .week {
+            display: flex;
+        }
+
+        .day {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+        }
+
+        .week:first-of-type .day:first-of-type {
+            margin-left: 14.5%;
+        }
+
+        .week:last-of-type .day:last-of-type {
+            margin-right: 43.1%;
+        }
+
+        .month {
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .week {
+            height: 80px;
+        }
+
+        .day {
+            color: #0f62fe;
+            padding: 5px;
+            margin: 2px;
+            background-color: #e5f6ff;
+            border: 1px solid #0f62fe;
+        }
+
+        .event {
+            position: relative;
+        }
+
+        .notification {
+            background-color: #be95ff;
+            width: 15px;
+            height: 15px;
+            border-radius: 100px;
+            display: inline-block;
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            color: white;
+            font-weight: 300;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .title {
+            text-align: right;
+            font-size: 10rem;
+            font-weight: 200;
+            opacity: .5;
+            color: #e5f6ff;
+            padding: 0;
+            margin: 0;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='month'>
+        <h1 class='title'>August</h1>
+        <div class='week'>
+            <div class='day'>1</div>
+            <div class='day'>2</div>
+            <div class='day'>3</div>
+            <div class='day'>4</div>
+            <div class='day'>5</div>
+            <div class='day'>6</div>
+        </div>
+        <div class='week'>
+            <div class='day'>7</div>
+            <div class='day'>8</div>
+            <div class='day event'>9
+                <span class='notification'>3</span>
+            </div>
+            <div class='day'>10</div>
+            <div class='day'>11</div>
+            <div class='day'>12</div>
+            <div class='day'>13</div>
+
+        </div>
+        <div class='week'>
+            <div class='day'>14</div>
+            <div class='day'>15</div>
+            <div class='day'>16</div>
+            <div class='day'>17</div>
+            <div class='day'>18</div>
+            <div class='day event'>19
+                <span class='notification'>1</span>
+            </div>
+            <div class='day'>20</div>
+
+        </div>
+        <div class='week'>
+            <div class='day'>21</div>
+            <div class='day'>22</div>
+            <div class='day'>23</div>
+            <div class='day'>24</div>
+            <div class='day'>25</div>
+            <div class='day'>26</div>
+            <div class='day'>27</div>
+        </div>
+        <div class='week'>
+            <div class='day'>28</div>
+            <div class='day'>29</div>
+            <div class='day'>30</div>
+            <div class='day'>31</div>
+        </div>
+    </div>
+</body>
+
+</html>

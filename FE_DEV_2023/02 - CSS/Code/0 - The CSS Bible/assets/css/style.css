@@ -1,0 +1,207 @@
+/* 
+ * Copyright 2022 Nino Škuflić <nino.skuflic@predavaci.algebra.hr>.  
+ */
+
+
+/*----------------------------------------------------------------------------* 
+ * TABLE OF CONTENTS
+ * - Selectors
+ * - Pseudo-classes
+ * - Pseudo-elements
+ * - Background
+ * - Box Model
+ * - Display
+ * - Position
+ * - Flexbox
+ *----------------------------------------------------------------------------*/
+
+/**************************************************
+ * SELECTORS
+**************************************************/
+
+body {
+    color: #333;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    background-color: azure;
+    padding: 20px;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2em;
+    /* 2 * 16px = 32px */
+}
+
+p {
+    font-size: medium;
+}
+
+a {
+    color: #333;
+}
+
+em {
+    text-decoration: underline;
+}
+
+/* CLASS SELECTORS */
+
+.article-paragraph {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+/* ID SELECTORS */
+
+#important {
+    font-weight: bold;
+}
+
+#main {
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 2em;
+}
+
+#main h1 {
+    margin-bottom: 0px;
+}
+
+#main p {
+    margin-top: 0px;
+}
+
+/* ATTRIBUTE SELECTORS */
+
+[title] {
+    text-decoration: underline solid #333;
+}
+
+[title="first paragraph"] {
+    font-weight: bold;
+}
+
+/**************************************************
+ * PSEUDO-CLASSES
+**************************************************/
+
+a:visited {
+    color: #0f62fe;
+}
+
+a:hover {
+    color: #be95ff;
+}
+
+/* The :nth-child() CSS pseudo-class matches elements based on their position among a group of siblings. */
+p:nth-child(2) {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* The :first-of-type CSS pseudo-class represents the first element of its type among a group of sibling elements. */
+p:first-of-type {
+    font-weight: 200;
+}
+
+/**************************************************
+ * PSEUDO-ELEMENTS
+**************************************************/
+
+/* Selects the whole first line, of any paragraph */
+p::first-line {
+    color: #0f62fe;
+}
+
+#main p {
+    font-size: 30px;
+}
+
+/**************************************************
+ * BACKGROUND
+**************************************************/
+
+#main {
+    background-color: #e5f6ff;
+
+    /*  background: background-color background-image position/background-size background-repeat background-origin background-clip background-attachment */
+    background: #f2f4f8 url(https://example.com/image.jpg) center center/contain no-repeat;
+}
+
+/**************************************************
+ * BOX MODEL
+**************************************************/
+
+.box-model {
+    background-color: #ff7eb6;
+    height: 150px;
+    width: 300px;
+
+    border-top: 6px solid #333;
+    border-right: 10px double #f33;
+    border-bottom: 4px dashed #33f;
+    border-left: 8px dotted #3f3;
+
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/**************************************************
+ * POSITION
+**************************************************/
+
+.position {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: blue;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+/**************************************************
+ * FLEX BOX
+**************************************************/
+
+.wrapper {
+    margin: 30px 0 30px 0;
+    border: 1px dashed #666;
+    padding: 1em;
+}
+
+.wrapper div {
+    background: #eee;
+    border: 1px solid #666;
+    padding: 1em;
+    text-align: center;
+    width: 150px;
+    margin: 1em;
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* display:flex | inline-flex */
+}
+
+/**************************************************
+ * TRANSFORMATIONS
+**************************************************/
+
+.translate {
+    background-color: yellowgreen;
+    border: 1px solid #333;
+    width: 200px;
+    height: 20px;
+    margin: 4em auto;
+    padding-left: 10px;
+    font-weight: 300;
+
+    transform: rotate(30deg);
+}

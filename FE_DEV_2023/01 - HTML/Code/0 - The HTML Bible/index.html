@@ -1,0 +1,119 @@
+<!-- Copyright 2023 Nino Škuflić <nino.skuflic@predavaci.algebra.hr>   -->
+
+<!-- 
+* TABLE OF CONTENTS 
+* - Meta Tags
+* - Tags used to format text such as H (heading) tags, P (paragraph), bold, italic, underline, etc.
+* - Lists
+* - Graphics / Images
+* - Video
+* - Links
+* - Tables
+* - Forms
+* - Content Structure
+-->
+
+<!-- Doctype is not case sensitive, can be written as Doctype, DocType, doctype or DOCTYPE -->
+<!Doctype html>
+<html>
+
+<head>
+    <title>The HTML Bible</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/offcanvas/">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://static.skuflic.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://static.skuflic.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://static.skuflic.com/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://static.skuflic.com/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://static.skuflic.com/favicons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="https://static.skuflic.com/favicons/favicon.ico">
+</head>
+
+<body>
+    <!-- H tags are used to format text. They can impact SEO.  -->
+    <h1>This is our first H1 Tag</h1>
+    <h2>This is our first H1 Tag</h2>
+    <h3>This is our first H1 Tag</h3>
+    <h4>This is our first H1 Tag</h4>
+    <h5>This is our first H1 Tag</h5>
+    <h6>This is our first H1 Tag</h6>
+    <hr>
+    <!-- Paragraph tag is use to create.. well, a paragraph. You can also use various tags to stylise the content. -->
+    <p>Lorem <b>ipsum</b> dolor, sit amet <i>consectetur</i> adipisicing elit. <u>Non</u> iure recusandae <del>obcaecati</del> earum! Modi repellat tempore, <strong>rem</strong> commodi alias dicta.</p>
+<hr>
+    <!-- Lists can be ordered (<ol>) or unordered (<ul>). They are useful for recipes for example. -->
+    <div>
+        <ul>
+            <li>John</li>
+            <li>Jane</li>
+            <li>Sam</li>
+            <li>Samantha</li>
+        </ul>
+
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Grapes</li>
+        </ol>
+    </div>
+    <hr>
+    <!-- Image tags need to have SRC and ALT as required attributes -->
+    <img src="../Media/images/logo/html-css.svg" width="300" alt="HTML">
+    <hr>
+    <!-- Video tags can have multiple sources. It can be a great backup method if one file is not supported! -->
+    <video src="../Media/video/mountains.webm" controls width="300"></video>
+
+    <video controls width="300" loop autoplay muted>
+        <source src="../Media/video/mountains.mp4" type="video/mp4">
+    </video>
+    <hr>
+
+    <!-- Hyperlinks can link to internal or external content. They can also DOWNLOAD a file when a user clicks on it. -->
+    <a href="sample.pdf" download="Q1 Earnings Report.pdf">Download PDF</a> |
+    <a href="mailto:nino.skuflic@predavaci.algebra.hr">Contact the lecturer</a>
+    <hr>
+    <!-- Tables can be a great choice when you need to show multiple data in a table like fashion. -->
+    <table style="border:1px solid #333">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- Forms accept a GET or POST method. Use POST when you need to send sensitive data. Remember that GET has a limit of 3000 chars. -->
+    <form name="contactForm" action="" method="GET" enctype="multipart/form-data" autocomplete="off">
+        <div>
+            <label for="email">Ime i prezime</label><br>
+            <input id="email" name="email" type="email" size="30" maxlength="20" placeholder="Enter your email address" required>
+        </div>
+
+        <div>
+            <input name="reset" type="reset" value="Reset form">
+            <input name="submit" type="submit" value="Submit form">
+        </div>
+    </form>
+    <hr>
+    <!-- Remember that you can organise your content with semantic elements such as header, main, footer, aside, etc. -->
+    <header>
+        Page Header
+        (name, navigation, logotype, etc.)
+    </header>
+    <main>
+        Main Content
+        (content, forms, images, tabs, lists, etc.)
+    </main>
+    <footer>
+        Footer
+        (URL's, copyright, menu, legal text, etc.)
+    </footer>
+</body>
+
+</html>

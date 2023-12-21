@@ -1,0 +1,14 @@
+.class-component {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.function-component {
+    background-color: lavender;
+    padding: 10px;
+}
+
+.children-component {
+    background-color: antiquewhite;
+    padding: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Changing DOM Structure</title>
+</head>
+
+<body>
+    <h1>Hey, dare to change the background?</h1>
+    <button onclick='setBackground()'>Set background</button>
+    <div id='main'>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit quidem sit, ab nemo asperiores sequi in
+            eius aspernatur odio nisi sapiente tempora cupiditate at magnam odit ratione, officia fugiat.</p>
+        <button onclick='changeColor(`blue`)'>Blue</button>
+        <button onclick='changeColor(`purple`)'>Purple</button>
+        <button onclick='hideEverything()'>Delete everything</button>
+
+        <hr>
+        <input id='name' placeholder='First name' />
+        <input id='surname' placeholder='Last name' />
+
+        <button onclick='submitForm()'>Submit</button>
+        <button onclick='checkTags()'>Check tags</button>
+        <button onclick='newElement()'>New Element</button>
+        <button onclick='removeElement()'>Remove Element</button>
+        <button onclick='removeElementWithoutParentNode()'>Remove Element 2</button>
+
+        <div class='footer'>
+            <h3 id='footer'>Footer</h3>
+            <input name='footer' placeholder='Enter something'>
+            <button onclick='getEverything()'>Get various stuff</button>
+        </div>
+
+        <div id="roditelj">
+            <p>Dijete element</p>
+        </div>
+
+        <ul id="mojaLista">
+            <li>Prva stavka</li>
+            <li>Druga stavka</li>
+            <li>Treća stavka</li>
+        </ul>
+
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
